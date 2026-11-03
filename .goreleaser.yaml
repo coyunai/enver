@@ -1,0 +1,49 @@
+version: 2
+
+project_name: enver
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: enver
+    main: ./cmd/enver
+    binary: enver
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w
+      - -X github.com/enver-dev/enver/internal/buildinfo.Version={{ .Version }}
+      - -X github.com/enver-dev/enver/internal/buildinfo.Commit={{ .ShortCommit }}
+      - -X github.com/enver-dev/enver/internal/buildinfo.Date={{ .CommitDate }}
+
+archives:
+  - formats: [tar.gz]
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+    name_template: >-
+      {{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}
+    files:
+      - LICENSE
+      - README.md
+      - README.zh-CN.md
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+      - "^chore:"

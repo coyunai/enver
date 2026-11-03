@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a reproducible problem with enver
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please include enough detail to reproduce it.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what actually happened?
+      placeholder: I expected the preset to switch all runtimes, but nodejs stayed on the previous version.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Install nodejs@22.23.4
+        2. Create a preset with nodejs + python
+        3. Apply it globally
+    validations:
+      required: true
+
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Doctor output
+      description: Paste `enver doctor --json` (redact usernames if needed).
+      render: json
+
+  - type: input
+    id: enver-version
+    attributes:
+      label: enver version
+      description: Output of `enver --version`
+    validations:
+      required: true
+
+  - type: input
+    id: vfox-version
+    attributes:
+      label: vfox version
+      description: Output of `vfox --version`
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11 23H2 / macOS 15.1 / Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Copy from the job console or CLI output.
+      render: text

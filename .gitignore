@@ -1,0 +1,79 @@
+# ---------------------------------------------------------------------------
+# Build output
+# ---------------------------------------------------------------------------
+/dist/
+/bin/
+/enver
+/enver.exe
+*.exe
+*.test
+*.out
+coverage.*
+*.coverprofile
+*.prof
+*.pid
+
+# ---------------------------------------------------------------------------
+# Local toolchains and caches
+# ---------------------------------------------------------------------------
+/.tools/
+/.cache/
+/.tmp/
+
+# ---------------------------------------------------------------------------
+# Frontend
+# ---------------------------------------------------------------------------
+/web/node_modules/
+/web/dist/
+/web/coverage/
+/web/.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# The embedded UI is committed on purpose: `go install` must produce a working
+# binary without requiring Node.js. Rebuild it with `make web` before committing
+# changes under web/.
+!/internal/webui/dist/
+!/internal/webui/dist/**
+
+# ---------------------------------------------------------------------------
+# Go workspace (local-only unless a go.work is intentionally added)
+# ---------------------------------------------------------------------------
+go.work
+go.work.sum
+
+# ---------------------------------------------------------------------------
+# Local state and secrets
+# ---------------------------------------------------------------------------
+*.log
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Editors
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.iml
+.history/
+.fleet/
+*.swp
+*.swo
+
+# ---------------------------------------------------------------------------
+# Operating systems
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
