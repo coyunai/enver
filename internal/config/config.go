@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/enver-dev/enver/internal/fsutil"
+	"github.com/coyunai/enver/internal/fsutil"
 )
 
 // Data is enver's own application configuration. It never duplicates vfox state.

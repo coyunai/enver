@@ -1,4 +1,4 @@
-module github.com/enver-dev/enver
+module github.com/coyunai/enver
 
 go 1.25.0
 

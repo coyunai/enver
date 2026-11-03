@@ -12,8 +12,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/enver-dev/enver/internal/run"
-	"github.com/enver-dev/enver/internal/vfox"
+	"github.com/coyunai/enver/internal/run"
+	"github.com/coyunai/enver/internal/vfox"
 )
 
 // ErrUnsupported means package introspection is not implemented for an SDK yet.

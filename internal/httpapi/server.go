@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/enver-dev/enver/internal/app"
-	"github.com/enver-dev/enver/internal/buildinfo"
-	"github.com/enver-dev/enver/internal/webui"
+	"github.com/coyunai/enver/internal/app"
+	"github.com/coyunai/enver/internal/buildinfo"
+	"github.com/coyunai/enver/internal/webui"
 )
 
 // Server serves the local API and the embedded web UI.

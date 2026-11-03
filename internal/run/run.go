@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/enver-dev/enver/internal/vfox"
+	"github.com/coyunai/enver/internal/vfox"
 )
 
 // Command runs a command, streaming normalized output lines to onLine.

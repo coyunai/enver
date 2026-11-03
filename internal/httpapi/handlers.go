@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/enver-dev/enver/internal/app"
-	"github.com/enver-dev/enver/internal/catalog"
-	"github.com/enver-dev/enver/internal/jobs"
-	"github.com/enver-dev/enver/internal/packages"
-	"github.com/enver-dev/enver/internal/preset"
-	"github.com/enver-dev/enver/internal/vfox"
+	"github.com/coyunai/enver/internal/app"
+	"github.com/coyunai/enver/internal/catalog"
+	"github.com/coyunai/enver/internal/jobs"
+	"github.com/coyunai/enver/internal/packages"
+	"github.com/coyunai/enver/internal/preset"
+	"github.com/coyunai/enver/internal/vfox"
 )
 
 type vfoxState struct {

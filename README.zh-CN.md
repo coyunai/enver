@@ -58,7 +58,7 @@ Node 20 + Python 3.12 + Java 17，再配一个虚拟环境、一组环境变量�
 ### 从源码构建
 
 ```bash
-git clone https://github.com/enver-dev/enver.git
+git clone https://github.com/coyunai/enver.git
 cd enver
 make build          # 先构建前端，再嵌入二进制
 ./dist/enver --version
@@ -76,7 +76,7 @@ go build -trimpath -o dist\enver.exe .\cmd\enver
 前端已经嵌入二进制，因此可以直接：
 
 ```bash
-go install github.com/enver-dev/enver/cmd/enver@latest
+go install github.com/coyunai/enver/cmd/enver@latest
 ```
 
 ### 发布包

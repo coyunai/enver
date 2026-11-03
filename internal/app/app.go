@@ -13,17 +13,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/enver-dev/enver/internal/buildinfo"
-	"github.com/enver-dev/enver/internal/config"
-	"github.com/enver-dev/enver/internal/doctor"
-	"github.com/enver-dev/enver/internal/fsutil"
-	"github.com/enver-dev/enver/internal/jobs"
-	"github.com/enver-dev/enver/internal/packages"
-	"github.com/enver-dev/enver/internal/platform"
-	"github.com/enver-dev/enver/internal/preset"
-	"github.com/enver-dev/enver/internal/run"
-	"github.com/enver-dev/enver/internal/venv"
-	"github.com/enver-dev/enver/internal/vfox"
+	"github.com/coyunai/enver/internal/buildinfo"
+	"github.com/coyunai/enver/internal/config"
+	"github.com/coyunai/enver/internal/doctor"
+	"github.com/coyunai/enver/internal/fsutil"
+	"github.com/coyunai/enver/internal/jobs"
+	"github.com/coyunai/enver/internal/packages"
+	"github.com/coyunai/enver/internal/platform"
+	"github.com/coyunai/enver/internal/preset"
+	"github.com/coyunai/enver/internal/run"
+	"github.com/coyunai/enver/internal/venv"
+	"github.com/coyunai/enver/internal/vfox"
 )
 
 // App wires the application services together.

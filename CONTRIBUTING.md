@@ -13,7 +13,7 @@ Thanks for helping improve enver.
 ## Setup
 
 ```bash
-git clone https://github.com/enver-dev/enver.git
+git clone https://github.com/coyunai/enver.git
 cd enver
 
 cd web && npm ci && npm run build && cd ..

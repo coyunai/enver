@@ -4,5 +4,5 @@ contact_links:
     url: https://vfox.dev
     about: Runtime installation and plugin behavior belongs to vfox.
   - name: Security report
-    url: https://github.com/enver-dev/enver/security/advisories/new
+    url: https://github.com/coyunai/enver/security/advisories/new
     about: Please report vulnerabilities privately.

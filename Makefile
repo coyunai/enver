@@ -2,9 +2,9 @@ VERSION ?= 0.0.1
 COMMIT  ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo none)
 DATE    ?= $(shell date -u +%Y-%m-%dT%H:%M:%SZ)
 LDFLAGS := -s -w \
-	-X github.com/enver-dev/enver/internal/buildinfo.Version=$(VERSION) \
-	-X github.com/enver-dev/enver/internal/buildinfo.Commit=$(COMMIT) \
-	-X github.com/enver-dev/enver/internal/buildinfo.Date=$(DATE)
+	-X github.com/coyunai/enver/internal/buildinfo.Version=$(VERSION) \
+	-X github.com/coyunai/enver/internal/buildinfo.Commit=$(COMMIT) \
+	-X github.com/coyunai/enver/internal/buildinfo.Date=$(DATE)
 
 .PHONY: all web build test vet fmt dev clean
 

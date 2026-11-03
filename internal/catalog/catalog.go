@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/enver-dev/enver/internal/fsutil"
+	"github.com/coyunai/enver/internal/fsutil"
 )
 
 const DefaultURL = "https://version-fox.github.io/vfox-plugins/index.json"

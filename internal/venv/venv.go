@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/enver-dev/enver/internal/fsutil"
+	"github.com/coyunai/enver/internal/fsutil"
 )
 
 // Record describes a Python virtual environment managed by enver.

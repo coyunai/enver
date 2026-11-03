@@ -21,10 +21,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/enver-dev/enver/internal/app"
-	"github.com/enver-dev/enver/internal/buildinfo"
-	"github.com/enver-dev/enver/internal/httpapi"
-	"github.com/enver-dev/enver/internal/jobs"
+	"github.com/coyunai/enver/internal/app"
+	"github.com/coyunai/enver/internal/buildinfo"
+	"github.com/coyunai/enver/internal/httpapi"
+	"github.com/coyunai/enver/internal/jobs"
 )
 
 var jsonOutput bool

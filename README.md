@@ -63,7 +63,7 @@ delegates every download, extraction and plugin concern back to vfox.
 ### From source
 
 ```bash
-git clone https://github.com/enver-dev/enver.git
+git clone https://github.com/coyunai/enver.git
 cd enver
 make build          # builds the UI, then embeds it into the binary
 ./dist/enver --version
@@ -81,7 +81,7 @@ go build -trimpath -o dist\enver.exe .\cmd\enver
 The web UI is embedded in the binary, so `go install` works:
 
 ```bash
-go install github.com/enver-dev/enver/cmd/enver@latest
+go install github.com/coyunai/enver/cmd/enver@latest
 ```
 
 ### Release binaries

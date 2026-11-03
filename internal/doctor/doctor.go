@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/enver-dev/enver/internal/platform"
-	"github.com/enver-dev/enver/internal/venv"
-	"github.com/enver-dev/enver/internal/vfox"
+	"github.com/coyunai/enver/internal/platform"
+	"github.com/coyunai/enver/internal/venv"
+	"github.com/coyunai/enver/internal/vfox"
 )
 
 type Status string

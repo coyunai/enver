@@ -21,9 +21,9 @@ builds:
       - arm64
     ldflags:
       - -s -w
-      - -X github.com/enver-dev/enver/internal/buildinfo.Version={{ .Version }}
-      - -X github.com/enver-dev/enver/internal/buildinfo.Commit={{ .ShortCommit }}
-      - -X github.com/enver-dev/enver/internal/buildinfo.Date={{ .CommitDate }}
+      - -X github.com/coyunai/enver/internal/buildinfo.Version={{ .Version }}
+      - -X github.com/coyunai/enver/internal/buildinfo.Commit={{ .ShortCommit }}
+      - -X github.com/coyunai/enver/internal/buildinfo.Date={{ .CommitDate }}
 
 archives:
   - formats: [tar.gz]
